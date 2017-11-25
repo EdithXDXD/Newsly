@@ -15,9 +15,10 @@
 		CC1277971FC2A50C004C6567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1277951FC2A50C004C6567 /* LaunchScreen.storyboard */; };
 		CC1277A21FC2A50C004C6567 /* NewslyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1277A11FC2A50C004C6567 /* NewslyTests.m */; };
 		CC1277AD1FC2A50C004C6567 /* NewslyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1277AC1FC2A50C004C6567 /* NewslyUITests.m */; };
-		CC1277BB1FC2A89C004C6567 /* _98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC1277BA1FC2A89C004C6567 /* _98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg */; };
 		CC1277C21FCA2196004C6567 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C01FCA2196004C6567 /* FBSDKCoreKit.framework */; };
 		CC1277C31FCA2196004C6567 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C11FCA2196004C6567 /* FBSDKLoginKit.framework */; };
+		CC1277C71FCA276C004C6567 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C51FCA276C004C6567 /* Bolts.framework */; };
+		CC1277C81FCA276C004C6567 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C61FCA276C004C6567 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +55,10 @@
 		CC1277A81FC2A50C004C6567 /* NewslyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewslyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1277AC1FC2A50C004C6567 /* NewslyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewslyUITests.m; sourceTree = "<group>"; };
 		CC1277AE1FC2A50C004C6567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC1277BA1FC2A89C004C6567 /* _98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "_98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg"; sourceTree = "<group>"; };
 		CC1277C01FCA2196004C6567 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CC1277C11FCA2196004C6567 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CC1277C51FCA276C004C6567 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		CC1277C61FCA276C004C6567 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1277C81FCA276C004C6567 /* FBSDKShareKit.framework in Frameworks */,
+				CC1277C71FCA276C004C6567 /* Bolts.framework in Frameworks */,
 				CC1277C31FCA2196004C6567 /* FBSDKLoginKit.framework in Frameworks */,
 				CC1277C21FCA2196004C6567 /* FBSDKCoreKit.framework in Frameworks */,
 			);
@@ -116,9 +120,7 @@
 				CC12778E1FC2A50C004C6567 /* ViewController.m */,
 				CC1277901FC2A50C004C6567 /* Main.storyboard */,
 				CC1277931FC2A50C004C6567 /* Assets.xcassets */,
-				CC1277BA1FC2A89C004C6567 /* _98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg */,
 				CC1277951FC2A50C004C6567 /* LaunchScreen.storyboard */,
-				CC1277981FC2A50C004C6567 /* Info.plist */,
 				CC1277871FC2A50C004C6567 /* Supporting Files */,
 			);
 			path = Newsly;
@@ -127,6 +129,7 @@
 		CC1277871FC2A50C004C6567 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC1277981FC2A50C004C6567 /* Info.plist */,
 				CC1277881FC2A50C004C6567 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -153,6 +156,8 @@
 		CC1277C41FCA2472004C6567 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				CC1277C51FCA276C004C6567 /* Bolts.framework */,
+				CC1277C61FCA276C004C6567 /* FBSDKShareKit.framework */,
 				CC1277C11FCA2196004C6567 /* FBSDKLoginKit.framework */,
 				CC1277C01FCA2196004C6567 /* FBSDKCoreKit.framework */,
 			);
@@ -268,7 +273,6 @@
 				CC1277971FC2A50C004C6567 /* LaunchScreen.storyboard in Resources */,
 				CC1277941FC2A50C004C6567 /* Assets.xcassets in Resources */,
 				CC1277921FC2A50C004C6567 /* Main.storyboard in Resources */,
-				CC1277BB1FC2A89C004C6567 /* _98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +467,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "~/Documents/FacebookSDK";
 				INFOPLIST_FILE = Newsly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruyinshao.Newsly;

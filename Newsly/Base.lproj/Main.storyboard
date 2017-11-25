@@ -213,7 +213,7 @@
         <!--View Controller-->
         <scene sceneID="Aps-vc-Dar">
             <objects>
-                <viewController id="zeC-Xz-NMg" sceneMemberID="viewController">
+                <viewController id="zeC-Xz-NMg" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o7U-mX-Rbu"/>
                         <viewControllerLayoutGuide type="bottom" id="KaK-1C-8Bd"/>
@@ -300,7 +300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9RY-N4-ihd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2740" y="-666"/>
+            <point key="canvasLocation" x="-2686" y="-666"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="G2k-cx-7Zr">
