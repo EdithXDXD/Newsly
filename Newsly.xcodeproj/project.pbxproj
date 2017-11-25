@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC1277891FC2A50C004C6567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1277881FC2A50C004C6567 /* main.m */; };
+		CC12778C1FC2A50C004C6567 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC12778B1FC2A50C004C6567 /* AppDelegate.m */; };
+		CC12778F1FC2A50C004C6567 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC12778E1FC2A50C004C6567 /* ViewController.m */; };
+		CC1277921FC2A50C004C6567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1277901FC2A50C004C6567 /* Main.storyboard */; };
+		CC1277941FC2A50C004C6567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1277931FC2A50C004C6567 /* Assets.xcassets */; };
+		CC1277971FC2A50C004C6567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1277951FC2A50C004C6567 /* LaunchScreen.storyboard */; };
+		CC1277A21FC2A50C004C6567 /* NewslyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1277A11FC2A50C004C6567 /* NewslyTests.m */; };
+		CC1277AD1FC2A50C004C6567 /* NewslyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1277AC1FC2A50C004C6567 /* NewslyUITests.m */; };
+		CC1277BB1FC2A89C004C6567 /* _98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC1277BA1FC2A89C004C6567 /* _98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg */; };
+		CC1277C21FCA2196004C6567 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C01FCA2196004C6567 /* FBSDKCoreKit.framework */; };
+		CC1277C31FCA2196004C6567 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C11FCA2196004C6567 /* FBSDKLoginKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC12779E1FC2A50C004C6567 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC12777C1FC2A50C004C6567 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC1277831FC2A50C004C6567;
+			remoteInfo = Newsly;
+		};
+		CC1277A91FC2A50C004C6567 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC12777C1FC2A50C004C6567 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC1277831FC2A50C004C6567;
+			remoteInfo = Newsly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC1277841FC2A50C004C6567 /* Newsly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newsly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1277881FC2A50C004C6567 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC12778A1FC2A50C004C6567 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC12778B1FC2A50C004C6567 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC12778D1FC2A50C004C6567 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC12778E1FC2A50C004C6567 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC1277911FC2A50C004C6567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC1277931FC2A50C004C6567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC1277961FC2A50C004C6567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC1277981FC2A50C004C6567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC12779D1FC2A50C004C6567 /* NewslyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewslyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1277A11FC2A50C004C6567 /* NewslyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewslyTests.m; sourceTree = "<group>"; };
+		CC1277A31FC2A50C004C6567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC1277A81FC2A50C004C6567 /* NewslyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewslyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1277AC1FC2A50C004C6567 /* NewslyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewslyUITests.m; sourceTree = "<group>"; };
+		CC1277AE1FC2A50C004C6567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC1277BA1FC2A89C004C6567 /* _98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "_98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg"; sourceTree = "<group>"; };
+		CC1277C01FCA2196004C6567 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		CC1277C11FCA2196004C6567 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC1277811FC2A50C004C6567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1277C31FCA2196004C6567 /* FBSDKLoginKit.framework in Frameworks */,
+				CC1277C21FCA2196004C6567 /* FBSDKCoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC12779A1FC2A50C004C6567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC1277A51FC2A50C004C6567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC12777B1FC2A50C004C6567 = {
+			isa = PBXGroup;
+			children = (
+				CC1277861FC2A50C004C6567 /* Newsly */,
+				CC1277A01FC2A50C004C6567 /* NewslyTests */,
+				CC1277AB1FC2A50C004C6567 /* NewslyUITests */,
+				CC1277851FC2A50C004C6567 /* Products */,
+				CC1277C41FCA2472004C6567 /* Framework */,
+			);
+			sourceTree = "<group>";
+		};
+		CC1277851FC2A50C004C6567 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC1277841FC2A50C004C6567 /* Newsly.app */,
+				CC12779D1FC2A50C004C6567 /* NewslyTests.xctest */,
+				CC1277A81FC2A50C004C6567 /* NewslyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC1277861FC2A50C004C6567 /* Newsly */ = {
+			isa = PBXGroup;
+			children = (
+				CC12778A1FC2A50C004C6567 /* AppDelegate.h */,
+				CC12778B1FC2A50C004C6567 /* AppDelegate.m */,
+				CC12778D1FC2A50C004C6567 /* ViewController.h */,
+				CC12778E1FC2A50C004C6567 /* ViewController.m */,
+				CC1277901FC2A50C004C6567 /* Main.storyboard */,
+				CC1277931FC2A50C004C6567 /* Assets.xcassets */,
+				CC1277BA1FC2A89C004C6567 /* _98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg */,
+				CC1277951FC2A50C004C6567 /* LaunchScreen.storyboard */,
+				CC1277981FC2A50C004C6567 /* Info.plist */,
+				CC1277871FC2A50C004C6567 /* Supporting Files */,
+			);
+			path = Newsly;
+			sourceTree = "<group>";
+		};
+		CC1277871FC2A50C004C6567 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC1277881FC2A50C004C6567 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC1277A01FC2A50C004C6567 /* NewslyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC1277A11FC2A50C004C6567 /* NewslyTests.m */,
+				CC1277A31FC2A50C004C6567 /* Info.plist */,
+			);
+			path = NewslyTests;
+			sourceTree = "<group>";
+		};
+		CC1277AB1FC2A50C004C6567 /* NewslyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC1277AC1FC2A50C004C6567 /* NewslyUITests.m */,
+				CC1277AE1FC2A50C004C6567 /* Info.plist */,
+			);
+			path = NewslyUITests;
+			sourceTree = "<group>";
+		};
+		CC1277C41FCA2472004C6567 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				CC1277C11FCA2196004C6567 /* FBSDKLoginKit.framework */,
+				CC1277C01FCA2196004C6567 /* FBSDKCoreKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC1277831FC2A50C004C6567 /* Newsly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC1277B11FC2A50C004C6567 /* Build configuration list for PBXNativeTarget "Newsly" */;
+			buildPhases = (
+				CC1277801FC2A50C004C6567 /* Sources */,
+				CC1277811FC2A50C004C6567 /* Frameworks */,
+				CC1277821FC2A50C004C6567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Newsly;
+			productName = Newsly;
+			productReference = CC1277841FC2A50C004C6567 /* Newsly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC12779C1FC2A50C004C6567 /* NewslyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC1277B41FC2A50C004C6567 /* Build configuration list for PBXNativeTarget "NewslyTests" */;
+			buildPhases = (
+				CC1277991FC2A50C004C6567 /* Sources */,
+				CC12779A1FC2A50C004C6567 /* Frameworks */,
+				CC12779B1FC2A50C004C6567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC12779F1FC2A50C004C6567 /* PBXTargetDependency */,
+			);
+			name = NewslyTests;
+			productName = NewslyTests;
+			productReference = CC12779D1FC2A50C004C6567 /* NewslyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC1277A71FC2A50C004C6567 /* NewslyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC1277B71FC2A50C004C6567 /* Build configuration list for PBXNativeTarget "NewslyUITests" */;
+			buildPhases = (
+				CC1277A41FC2A50C004C6567 /* Sources */,
+				CC1277A51FC2A50C004C6567 /* Frameworks */,
+				CC1277A61FC2A50C004C6567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC1277AA1FC2A50C004C6567 /* PBXTargetDependency */,
+			);
+			name = NewslyUITests;
+			productName = NewslyUITests;
+			productReference = CC1277A81FC2A50C004C6567 /* NewslyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC12777C1FC2A50C004C6567 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Ruyin Shao";
+				TargetAttributes = {
+					CC1277831FC2A50C004C6567 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					CC12779C1FC2A50C004C6567 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC1277831FC2A50C004C6567;
+					};
+					CC1277A71FC2A50C004C6567 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC1277831FC2A50C004C6567;
+					};
+				};
+			};
+			buildConfigurationList = CC12777F1FC2A50C004C6567 /* Build configuration list for PBXProject "Newsly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC12777B1FC2A50C004C6567;
+			productRefGroup = CC1277851FC2A50C004C6567 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC1277831FC2A50C004C6567 /* Newsly */,
+				CC12779C1FC2A50C004C6567 /* NewslyTests */,
+				CC1277A71FC2A50C004C6567 /* NewslyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC1277821FC2A50C004C6567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1277971FC2A50C004C6567 /* LaunchScreen.storyboard in Resources */,
+				CC1277941FC2A50C004C6567 /* Assets.xcassets in Resources */,
+				CC1277921FC2A50C004C6567 /* Main.storyboard in Resources */,
+				CC1277BB1FC2A89C004C6567 /* _98821530_4b262e13-ecd8-40f2-8059-fe1ddbe7cb4b.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC12779B1FC2A50C004C6567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC1277A61FC2A50C004C6567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC1277801FC2A50C004C6567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC12778F1FC2A50C004C6567 /* ViewController.m in Sources */,
+				CC12778C1FC2A50C004C6567 /* AppDelegate.m in Sources */,
+				CC1277891FC2A50C004C6567 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC1277991FC2A50C004C6567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1277A21FC2A50C004C6567 /* NewslyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC1277A41FC2A50C004C6567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1277AD1FC2A50C004C6567 /* NewslyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC12779F1FC2A50C004C6567 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC1277831FC2A50C004C6567 /* Newsly */;
+			targetProxy = CC12779E1FC2A50C004C6567 /* PBXContainerItemProxy */;
+		};
+		CC1277AA1FC2A50C004C6567 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC1277831FC2A50C004C6567 /* Newsly */;
+			targetProxy = CC1277A91FC2A50C004C6567 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC1277901FC2A50C004C6567 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC1277911FC2A50C004C6567 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC1277951FC2A50C004C6567 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC1277961FC2A50C004C6567 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC1277AF1FC2A50C004C6567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC1277B01FC2A50C004C6567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC1277B21FC2A50C004C6567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Newsly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruyinshao.Newsly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC1277B31FC2A50C004C6567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Newsly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruyinshao.Newsly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC1277B51FC2A50C004C6567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewslyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruyinshao.NewslyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Newsly.app/Newsly";
+			};
+			name = Debug;
+		};
+		CC1277B61FC2A50C004C6567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewslyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruyinshao.NewslyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Newsly.app/Newsly";
+			};
+			name = Release;
+		};
+		CC1277B81FC2A50C004C6567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NewslyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruyinshao.NewslyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Newsly;
+			};
+			name = Debug;
+		};
+		CC1277B91FC2A50C004C6567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NewslyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruyinshao.NewslyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Newsly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC12777F1FC2A50C004C6567 /* Build configuration list for PBXProject "Newsly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC1277AF1FC2A50C004C6567 /* Debug */,
+				CC1277B01FC2A50C004C6567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC1277B11FC2A50C004C6567 /* Build configuration list for PBXNativeTarget "Newsly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC1277B21FC2A50C004C6567 /* Debug */,
+				CC1277B31FC2A50C004C6567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC1277B41FC2A50C004C6567 /* Build configuration list for PBXNativeTarget "NewslyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC1277B51FC2A50C004C6567 /* Debug */,
+				CC1277B61FC2A50C004C6567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC1277B71FC2A50C004C6567 /* Build configuration list for PBXNativeTarget "NewslyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC1277B81FC2A50C004C6567 /* Debug */,
+				CC1277B91FC2A50C004C6567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC12777C1FC2A50C004C6567 /* Project object */;
+}
