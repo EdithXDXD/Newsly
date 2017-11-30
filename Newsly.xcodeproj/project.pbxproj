@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B501F6EB5FA7620C5ED4B2 /* libPods-NewslyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8EA64DBCBB01B2816E5C8C /* libPods-NewslyTests.a */; };
+		7C25AD57862022095AAB0431 /* libPods-Newsly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DF774445564CDA31777E5B /* libPods-Newsly.a */; };
+		C653174953DCA51EFFB20D19 /* libPods-NewslyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE4AB768CCE98DF216CA5EC /* libPods-NewslyUITests.a */; };
 		CC1277891FC2A50C004C6567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1277881FC2A50C004C6567 /* main.m */; };
 		CC12778C1FC2A50C004C6567 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC12778B1FC2A50C004C6567 /* AppDelegate.m */; };
 		CC12778F1FC2A50C004C6567 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC12778E1FC2A50C004C6567 /* ViewController.m */; };
@@ -19,6 +22,7 @@
 		CC1277C31FCA2196004C6567 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C11FCA2196004C6567 /* FBSDKLoginKit.framework */; };
 		CC1277C71FCA276C004C6567 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C51FCA276C004C6567 /* Bolts.framework */; };
 		CC1277C81FCA276C004C6567 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C61FCA276C004C6567 /* FBSDKShareKit.framework */; };
+		CC936A241FCF50A80010055B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC936A231FCF50A80010055B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02EB56864EC5EA815520E20B /* Pods-NewslyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewslyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewslyTests/Pods-NewslyTests.release.xcconfig"; sourceTree = "<group>"; };
+		0F5BBB5ECC85CA452E1593D3 /* Pods-Newsly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newsly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Newsly/Pods-Newsly.release.xcconfig"; sourceTree = "<group>"; };
+		1DE4AB768CCE98DF216CA5EC /* libPods-NewslyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewslyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		267F8CEDCFCEE6914E61BEC1 /* Pods-Newsly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newsly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Newsly/Pods-Newsly.debug.xcconfig"; sourceTree = "<group>"; };
+		4B93E0BC5EBCDDBD1D66DCAF /* Pods-NewslyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewslyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewslyUITests/Pods-NewslyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4E8EA64DBCBB01B2816E5C8C /* libPods-NewslyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewslyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C200C19CE2D5A98A96C5BE04 /* Pods-NewslyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewslyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewslyTests/Pods-NewslyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4EB6C478E45D86846928357 /* Pods-NewslyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewslyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewslyUITests/Pods-NewslyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC1277841FC2A50C004C6567 /* Newsly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newsly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1277881FC2A50C004C6567 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC12778A1FC2A50C004C6567 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +71,8 @@
 		CC1277C11FCA2196004C6567 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CC1277C51FCA276C004C6567 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		CC1277C61FCA276C004C6567 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		CC936A231FCF50A80010055B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2DF774445564CDA31777E5B /* libPods-Newsly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Newsly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 				CC1277C71FCA276C004C6567 /* Bolts.framework in Frameworks */,
 				CC1277C31FCA2196004C6567 /* FBSDKLoginKit.framework in Frameworks */,
 				CC1277C21FCA2196004C6567 /* FBSDKCoreKit.framework in Frameworks */,
+				7C25AD57862022095AAB0431 /* libPods-Newsly.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B501F6EB5FA7620C5ED4B2 /* libPods-NewslyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +100,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C653174953DCA51EFFB20D19 /* libPods-NewslyUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		095FD2E0E949038B5E87DAD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2DF774445564CDA31777E5B /* libPods-Newsly.a */,
+				4E8EA64DBCBB01B2816E5C8C /* libPods-NewslyTests.a */,
+				1DE4AB768CCE98DF216CA5EC /* libPods-NewslyUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFE7C246AC78B280C6707C4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				267F8CEDCFCEE6914E61BEC1 /* Pods-Newsly.debug.xcconfig */,
+				0F5BBB5ECC85CA452E1593D3 /* Pods-Newsly.release.xcconfig */,
+				C200C19CE2D5A98A96C5BE04 /* Pods-NewslyTests.debug.xcconfig */,
+				02EB56864EC5EA815520E20B /* Pods-NewslyTests.release.xcconfig */,
+				C4EB6C478E45D86846928357 /* Pods-NewslyUITests.debug.xcconfig */,
+				4B93E0BC5EBCDDBD1D66DCAF /* Pods-NewslyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CC12777B1FC2A50C004C6567 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +138,8 @@
 				CC1277AB1FC2A50C004C6567 /* NewslyUITests */,
 				CC1277851FC2A50C004C6567 /* Products */,
 				CC1277C41FCA2472004C6567 /* Framework */,
+				AFE7C246AC78B280C6707C4C /* Pods */,
+				095FD2E0E949038B5E87DAD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CC1277981FC2A50C004C6567 /* Info.plist */,
+				CC936A231FCF50A80010055B /* GoogleService-Info.plist */,
 				CC1277881FC2A50C004C6567 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -171,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC1277B11FC2A50C004C6567 /* Build configuration list for PBXNativeTarget "Newsly" */;
 			buildPhases = (
+				DD20BC3F4654925638BE5BB8 /* [CP] Check Pods Manifest.lock */,
 				CC1277801FC2A50C004C6567 /* Sources */,
 				CC1277811FC2A50C004C6567 /* Frameworks */,
 				CC1277821FC2A50C004C6567 /* Resources */,
+				A8633DA6D06D3BA9DC9E55BE /* [CP] Embed Pods Frameworks */,
+				714C0C892BC98E3C499760E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC1277B41FC2A50C004C6567 /* Build configuration list for PBXNativeTarget "NewslyTests" */;
 			buildPhases = (
+				057846A7AE9DCCBDC3414063 /* [CP] Check Pods Manifest.lock */,
 				CC1277991FC2A50C004C6567 /* Sources */,
 				CC12779A1FC2A50C004C6567 /* Frameworks */,
 				CC12779B1FC2A50C004C6567 /* Resources */,
+				805ACC30D690BD8B5C660174 /* [CP] Embed Pods Frameworks */,
+				D8D06F28345C6BE6063238E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC1277B71FC2A50C004C6567 /* Build configuration list for PBXNativeTarget "NewslyUITests" */;
 			buildPhases = (
+				9FA74176399C836AA25EBD1E /* [CP] Check Pods Manifest.lock */,
 				CC1277A41FC2A50C004C6567 /* Sources */,
 				CC1277A51FC2A50C004C6567 /* Frameworks */,
 				CC1277A61FC2A50C004C6567 /* Resources */,
+				28A9C81D93C532C21ADFD5A6 /* [CP] Embed Pods Frameworks */,
+				10A941905ED0D93DDC99C23D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC1277971FC2A50C004C6567 /* LaunchScreen.storyboard in Resources */,
+				CC936A241FCF50A80010055B /* GoogleService-Info.plist in Resources */,
 				CC1277941FC2A50C004C6567 /* Assets.xcassets in Resources */,
 				CC1277921FC2A50C004C6567 /* Main.storyboard in Resources */,
 			);
@@ -291,6 +344,153 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		057846A7AE9DCCBDC3414063 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewslyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10A941905ED0D93DDC99C23D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewslyUITests/Pods-NewslyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28A9C81D93C532C21ADFD5A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewslyUITests/Pods-NewslyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		714C0C892BC98E3C499760E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Newsly/Pods-Newsly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		805ACC30D690BD8B5C660174 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewslyTests/Pods-NewslyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FA74176399C836AA25EBD1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewslyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8633DA6D06D3BA9DC9E55BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Newsly/Pods-Newsly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8D06F28345C6BE6063238E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewslyTests/Pods-NewslyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD20BC3F4654925638BE5BB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Newsly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC1277801FC2A50C004C6567 /* Sources */ = {
@@ -446,6 +646,7 @@
 		};
 		CC1277B21FC2A50C004C6567 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267F8CEDCFCEE6914E61BEC1 /* Pods-Newsly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -461,6 +662,7 @@
 		};
 		CC1277B31FC2A50C004C6567 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5BBB5ECC85CA452E1593D3 /* Pods-Newsly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -477,6 +679,7 @@
 		};
 		CC1277B51FC2A50C004C6567 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C200C19CE2D5A98A96C5BE04 /* Pods-NewslyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NewslyTests/Info.plist;
@@ -489,6 +692,7 @@
 		};
 		CC1277B61FC2A50C004C6567 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02EB56864EC5EA815520E20B /* Pods-NewslyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NewslyTests/Info.plist;
@@ -501,6 +705,7 @@
 		};
 		CC1277B81FC2A50C004C6567 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4EB6C478E45D86846928357 /* Pods-NewslyUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NewslyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -512,6 +717,7 @@
 		};
 		CC1277B91FC2A50C004C6567 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B93E0BC5EBCDDBD1D66DCAF /* Pods-NewslyUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NewslyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
