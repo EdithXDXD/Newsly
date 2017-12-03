@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+@import Firebase;
 
 @interface ViewController ()
 
@@ -29,5 +30,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)loginButton:(FBSDKLoginButton *)loginButton
+didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
+              error:(NSError *)error {
+   
+}
 
 @end
