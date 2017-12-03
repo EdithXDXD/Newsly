@@ -26,6 +26,8 @@
     [self.dataModel requestHeadlines];
     UINib *nib = [UINib nibWithNibName:NewsTitleID bundle:nil];
     [[self tableView] registerNib:nib forCellReuseIdentifier:NewsTitleID];
+    [self tableView].rowHeight = 250.0f;
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -70,7 +72,7 @@
     UIImage *tmpImage = [[UIImage alloc] initWithData:data];
     cell.newsImage.image = tmpImage;
     cell.shortDescription.text = [currNews shortDescrip];
-    
+    [cell layoutIfNeeded];
     return cell;
 }
 
@@ -84,9 +86,9 @@
     [self performSegueWithIdentifier:@"webDisplay" sender:nil];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 210;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    return 250;
+//}
 
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(nonnull NewsTitleCell *)cell forRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
