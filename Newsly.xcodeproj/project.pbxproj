@@ -173,17 +173,9 @@
 		CC1277861FC2A50C004C6567 /* Newsly */ = {
 			isa = PBXGroup;
 			children = (
+				CC1509D61FD3D11D00DD1164 /* Controller */,
+				CC1509D51FD3D0F700DD1164 /* View */,
 				CC936A301FD38C380010055B /* Model */,
-				CC936A2C1FD387DF0010055B /* Cells */,
-				CC12778A1FC2A50C004C6567 /* AppDelegate.h */,
-				CC12778B1FC2A50C004C6567 /* AppDelegate.m */,
-				CC12778D1FC2A50C004C6567 /* ViewController.h */,
-				CC12778E1FC2A50C004C6567 /* ViewController.m */,
-				CC936A2D1FD389BC0010055B /* NewsTitlePage.h */,
-				CC936A2E1FD389BC0010055B /* NewsTitlePage.m */,
-				CC936A3A1FD3B5F10010055B /* NewsContentWeb.h */,
-				CC936A3B1FD3B5F10010055B /* NewsContentWeb.m */,
-				CC1277901FC2A50C004C6567 /* Main.storyboard */,
 				CC1277931FC2A50C004C6567 /* Assets.xcassets */,
 				CC1277951FC2A50C004C6567 /* LaunchScreen.storyboard */,
 				CC1277871FC2A50C004C6567 /* Supporting Files */,
@@ -228,6 +220,30 @@
 				CC1277C01FCA2196004C6567 /* FBSDKCoreKit.framework */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		CC1509D51FD3D0F700DD1164 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC1277901FC2A50C004C6567 /* Main.storyboard */,
+				CC936A2C1FD387DF0010055B /* Cells */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CC1509D61FD3D11D00DD1164 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC12778A1FC2A50C004C6567 /* AppDelegate.h */,
+				CC12778B1FC2A50C004C6567 /* AppDelegate.m */,
+				CC12778D1FC2A50C004C6567 /* ViewController.h */,
+				CC12778E1FC2A50C004C6567 /* ViewController.m */,
+				CC936A2D1FD389BC0010055B /* NewsTitlePage.h */,
+				CC936A2E1FD389BC0010055B /* NewsTitlePage.m */,
+				CC936A3A1FD3B5F10010055B /* NewsContentWeb.h */,
+				CC936A3B1FD3B5F10010055B /* NewsContentWeb.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		CC936A2C1FD387DF0010055B /* Cells */ = {
