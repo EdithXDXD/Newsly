@@ -12,7 +12,6 @@
 		C653174953DCA51EFFB20D19 /* libPods-NewslyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE4AB768CCE98DF216CA5EC /* libPods-NewslyUITests.a */; };
 		CC1277891FC2A50C004C6567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1277881FC2A50C004C6567 /* main.m */; };
 		CC12778C1FC2A50C004C6567 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC12778B1FC2A50C004C6567 /* AppDelegate.m */; };
-		CC12778F1FC2A50C004C6567 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC12778E1FC2A50C004C6567 /* ViewController.m */; };
 		CC1277921FC2A50C004C6567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1277901FC2A50C004C6567 /* Main.storyboard */; };
 		CC1277941FC2A50C004C6567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1277931FC2A50C004C6567 /* Assets.xcassets */; };
 		CC1277971FC2A50C004C6567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1277951FC2A50C004C6567 /* LaunchScreen.storyboard */; };
@@ -29,6 +28,7 @@
 		CC936A331FD38C770010055B /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC936A321FD38C770010055B /* NewsModel.m */; };
 		CC936A361FD38FC70010055B /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = CC936A351FD38FC70010055B /* News.m */; };
 		CC936A3C1FD3B5F10010055B /* NewsContentWeb.m in Sources */ = {isa = PBXBuildFile; fileRef = CC936A3B1FD3B5F10010055B /* NewsContentWeb.m */; };
+		CCA99E0F1FD53272002C168C /* SearchNewsPage.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA99E0E1FD53272002C168C /* SearchNewsPage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +61,6 @@
 		CC1277881FC2A50C004C6567 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC12778A1FC2A50C004C6567 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC12778B1FC2A50C004C6567 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CC12778D1FC2A50C004C6567 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CC12778E1FC2A50C004C6567 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CC1277911FC2A50C004C6567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC1277931FC2A50C004C6567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC1277961FC2A50C004C6567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +87,8 @@
 		CC936A351FD38FC70010055B /* News.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		CC936A3A1FD3B5F10010055B /* NewsContentWeb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsContentWeb.h; sourceTree = "<group>"; };
 		CC936A3B1FD3B5F10010055B /* NewsContentWeb.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsContentWeb.m; sourceTree = "<group>"; };
+		CCA99E0D1FD53272002C168C /* SearchNewsPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchNewsPage.h; sourceTree = "<group>"; };
+		CCA99E0E1FD53272002C168C /* SearchNewsPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchNewsPage.m; sourceTree = "<group>"; };
 		E2DF774445564CDA31777E5B /* libPods-Newsly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Newsly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -177,7 +177,6 @@
 				CC1509D51FD3D0F700DD1164 /* View */,
 				CC936A301FD38C380010055B /* Model */,
 				CC1277931FC2A50C004C6567 /* Assets.xcassets */,
-				CC1277951FC2A50C004C6567 /* LaunchScreen.storyboard */,
 				CC1277871FC2A50C004C6567 /* Supporting Files */,
 			);
 			path = Newsly;
@@ -186,6 +185,7 @@
 		CC1277871FC2A50C004C6567 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC1277951FC2A50C004C6567 /* LaunchScreen.storyboard */,
 				CC1277981FC2A50C004C6567 /* Info.plist */,
 				CC936A231FCF50A80010055B /* GoogleService-Info.plist */,
 				CC1277881FC2A50C004C6567 /* main.m */,
@@ -236,12 +236,12 @@
 			children = (
 				CC12778A1FC2A50C004C6567 /* AppDelegate.h */,
 				CC12778B1FC2A50C004C6567 /* AppDelegate.m */,
-				CC12778D1FC2A50C004C6567 /* ViewController.h */,
-				CC12778E1FC2A50C004C6567 /* ViewController.m */,
 				CC936A2D1FD389BC0010055B /* NewsTitlePage.h */,
 				CC936A2E1FD389BC0010055B /* NewsTitlePage.m */,
 				CC936A3A1FD3B5F10010055B /* NewsContentWeb.h */,
 				CC936A3B1FD3B5F10010055B /* NewsContentWeb.m */,
+				CCA99E0D1FD53272002C168C /* SearchNewsPage.h */,
+				CCA99E0E1FD53272002C168C /* SearchNewsPage.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -559,10 +559,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC12778F1FC2A50C004C6567 /* ViewController.m in Sources */,
 				CC936A3C1FD3B5F10010055B /* NewsContentWeb.m in Sources */,
 				CC936A361FD38FC70010055B /* News.m in Sources */,
 				CC936A2A1FD387D30010055B /* NewsTitleCell.m in Sources */,
+				CCA99E0F1FD53272002C168C /* SearchNewsPage.m in Sources */,
 				CC936A2F1FD389BC0010055B /* NewsTitlePage.m in Sources */,
 				CC12778C1FC2A50C004C6567 /* AppDelegate.m in Sources */,
 				CC936A331FD38C770010055B /* NewsModel.m in Sources */,

@@ -16,4 +16,5 @@
 @property NSString* author;
 @property NSString* publishTime;
 @property NSString* contentURL;
+@property BOOL favorited;
 @end

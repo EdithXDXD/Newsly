@@ -58,7 +58,7 @@
                     <navigationItem key="navigationItem" title="Featured News" id="goE-cN-zGn">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="KOw-9I-FZP">
                             <connections>
-                                <segue destination="ePQ-qs-kax" kind="presentation" id="Pbo-5G-tqv"/>
+                                <segue destination="ePQ-qs-kax" kind="presentation" identifier="searchNewsSegue" id="Pbo-5G-tqv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="-370" y="-666"/>
         </scene>
-        <!--View Controller-->
+        <!--Search News Page-->
         <scene sceneID="2E0-wR-2CY">
             <objects>
-                <viewController id="ePQ-qs-kax" sceneMemberID="viewController">
+                <viewController id="ePQ-qs-kax" customClass="SearchNewsPage" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WOW-1g-MxH"/>
                         <viewControllerLayoutGuide type="bottom" id="BWT-Ts-76U"/>
@@ -95,6 +95,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="Vyy-NA-oZk" eventType="editingDidEndOnExit" id="qbD-wb-aLw"/>
+                                    <outlet property="delegate" destination="ePQ-qs-kax" id="qA1-1z-kFx"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sorted by: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxD-IW-mqf">
                                 <rect key="frame" x="32" y="159" width="84" height="21"/>
@@ -128,8 +132,16 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Search" id="z9z-lW-mlI">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="KTU-Ox-eZg"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="yYD-uw-Z8C"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="KTU-Ox-eZg">
+                                            <connections>
+                                                <action selector="cancelRequest:" destination="ePQ-qs-kax" id="wqI-2z-8Gy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="yYD-uw-Z8C">
+                                            <connections>
+                                                <action selector="sendSearchRequest:" destination="ePQ-qs-kax" id="pGV-Uw-sE5"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -141,8 +153,15 @@
                             <constraint firstItem="DqH-Ex-g8B" firstAttribute="top" secondItem="WOW-1g-MxH" secondAttribute="bottom" id="QKo-Pg-hoT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="doneBarButton" destination="yYD-uw-Z8C" id="MJj-Zb-eHO"/>
+                        <outlet property="keywordTF" destination="gtz-a7-bim" id="jP9-C0-wEX"/>
+                        <outlet property="sortedByTF" destination="b4d-Uc-XVc" id="x1a-NQ-Pnw"/>
+                        <outlet property="sourcesTF" destination="2wH-Ks-fEW" id="ESR-Yv-vYg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRx-iv-F3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Vyy-NA-oZk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="276.81159420289856" y="-1317.3913043478262"/>
         </scene>

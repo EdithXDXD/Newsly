@@ -11,6 +11,7 @@
 #import "NewsModel.h"
 #import "News.h"
 #import "NewsContentWeb.h"
+#import "SearchNewsPage.h"
 
 @interface NewsTitlePage ()
 @property (strong, nonatomic) NewsModel *dataModel;
@@ -48,8 +49,9 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+    
     return [self.dataModel.headlines count];
+    
 }
 
 
@@ -65,14 +67,23 @@
     cell.newsTitle.text = [currNews title];
 
     //get image
-    NSURL *url = [NSURL URLWithString:currNews.ImageURL];
+    if (![currNews.ImageURL isEqual:[NSNull null]]){
+        NSURL *url = [NSURL URLWithString:currNews.ImageURL];
+        
+        NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+        UIImage *tmpImage = [[UIImage alloc] initWithData:data];
+        cell.newsImage.image = tmpImage;
+    }
+    else {
+        NSURL *url = [NSURL URLWithString:@"http://www.hdwallpaperspulse.com/wp-content/uploads/2013/04/1305672637-blue-pattern-navy-wallpaper-wallpaper.jpg"];
+        NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+        UIImage *tmpImage = [[UIImage alloc] initWithData:data];
+        cell.newsImage.image = tmpImage;
+        
+    }
     
-    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-    
-    UIImage *tmpImage = [[UIImage alloc] initWithData:data];
-    cell.newsImage.image = tmpImage;
     cell.shortDescription.text = [currNews shortDescrip];
-    [cell layoutIfNeeded];
+    //[cell layoutIfNeeded];
     return cell;
 }
 
@@ -83,6 +94,7 @@
     
     self.selectedNewsUrl = [currNews contentURL];
    // redirect to next page
+    
     [self performSegueWithIdentifier:@"webDisplay" sender:nil];
 }
 
@@ -91,13 +103,12 @@
 //}
 
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(nonnull NewsTitleCell *)cell forRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
-    
- 
-    
-
-    
-}
+//- (void)tableView:(UITableView *)tableView willDisplayCell:(nonnull NewsTitleCell *)cell forRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+//
+//
+//
+//
+//}
 
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -137,10 +148,37 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     if ([segue.identifier isEqualToString:@"webDisplay"]){
         NewsContentWeb * contentPage = [segue destinationViewController];
         contentPage.newsUrl = self.selectedNewsUrl;
+
     }
+    else if ([segue.identifier isEqualToString:@"searchNewsSegue"]){
+        SearchNewsPage* searchNewsPage = [segue destinationViewController];
+        //set completion code for block
+        
+        searchNewsPage.goSearchNews = ^(NSString *keyword, NSString *sortedBy, NSString *sources) {
+            if (keyword.length > 1 && sortedBy.length < 1 && sources.length < 1){
+                [self.dataModel searchNewsByKeyword:keyword];
+            }
+            else if (keyword.length > 1 && sortedBy.length < 1 && sources.length > 1){
+                 [self.dataModel searchNewsByKeywordAndSource:keyword :sources];
+            }
+            else if (keyword.length > 1 && sortedBy.length >1 && sources.length < 1){
+                [self.dataModel searchNewsByKeywordAndSource:keyword sortBy:sortedBy];
+            }
+            else if (keyword.length > 1 && sortedBy.length >1 && sources.length > 1){
+                [self.dataModel searchNewsByKeywordAndSource:keyword :sources sortBy:sortedBy];
+            }
+            
+            // Make the view controller go away
+            [self dismissViewControllerAnimated:YES completion:nil];
+            [self.tableView reloadData];
+        };
+            
+    }
+    
 }
 
 @end

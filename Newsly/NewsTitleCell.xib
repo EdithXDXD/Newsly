@@ -21,7 +21,7 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cal-W6-a0Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
-                        <color key="backgroundColor" red="0.85512958260000005" green="0.88513564310000004" blue="1" alpha="0.29243364726027399" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.15247029637915424" green="0.1248933977442615" blue="0.36000951776649748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
