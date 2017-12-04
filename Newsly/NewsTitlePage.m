@@ -36,6 +36,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -159,22 +160,20 @@
         //set completion code for block
         
         searchNewsPage.goSearchNews = ^(NSString *keyword, NSString *sortedBy, NSString *sources) {
-            if (keyword.length > 1 && sortedBy.length < 1 && sources.length < 1){
+            if (keyword.length > 0 && [keyword isEqualToString:@"feature"]){
+                [self.dataModel requestHeadlines];
+                [self.tableView reloadData];
+            }
+            else if (keyword.length > 0 && sources.length < 1){
                 [self.dataModel searchNewsByKeyword:keyword];
             }
-            else if (keyword.length > 1 && sortedBy.length < 1 && sources.length > 1){
+            else if (keyword.length > 0 && sources.length > 1){
                  [self.dataModel searchNewsByKeywordAndSource:keyword :sources];
             }
-            else if (keyword.length > 1 && sortedBy.length >1 && sources.length < 1){
-                [self.dataModel searchNewsByKeywordAndSource:keyword sortBy:sortedBy];
-            }
-            else if (keyword.length > 1 && sortedBy.length >1 && sources.length > 1){
-                [self.dataModel searchNewsByKeywordAndSource:keyword :sources sortBy:sortedBy];
-            }
-            
+           [self.tableView reloadData];
             // Make the view controller go away
             [self dismissViewControllerAnimated:YES completion:nil];
-            [self.tableView reloadData];
+            
         };
             
     }

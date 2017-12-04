@@ -40,6 +40,9 @@
     
 }
 -(void) requestHeadlines{
+    
+    // clear headlines
+    [self.headlines removeAllObjects];
     /*Get JSON Data from Google News API */
     //1. Send google api request
     self.googleNewsAPIKey = @"de3b0f3f8231437dbb55f9593a428cfd";
