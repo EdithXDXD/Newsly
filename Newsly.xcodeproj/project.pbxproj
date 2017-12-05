@@ -30,6 +30,7 @@
 		CC936A3C1FD3B5F10010055B /* NewsContentWeb.m in Sources */ = {isa = PBXBuildFile; fileRef = CC936A3B1FD3B5F10010055B /* NewsContentWeb.m */; };
 		CCA99E0F1FD53272002C168C /* SearchNewsPage.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA99E0E1FD53272002C168C /* SearchNewsPage.m */; };
 		CCA99E121FD558DA002C168C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA99E111FD558DA002C168C /* ViewController.m */; };
+		CCA99E141FD55E41002C168C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CCA99E131FD55E41002C168C /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		CCA99E0E1FD53272002C168C /* SearchNewsPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchNewsPage.m; sourceTree = "<group>"; };
 		CCA99E101FD558D9002C168C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CCA99E111FD558DA002C168C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CCA99E131FD55E41002C168C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E2DF774445564CDA31777E5B /* libPods-Newsly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Newsly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 		AFE7C246AC78B280C6707C4C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				CCA99E131FD55E41002C168C /* Podfile */,
 				267F8CEDCFCEE6914E61BEC1 /* Pods-Newsly.debug.xcconfig */,
 				0F5BBB5ECC85CA452E1593D3 /* Pods-Newsly.release.xcconfig */,
 				C200C19CE2D5A98A96C5BE04 /* Pods-NewslyTests.debug.xcconfig */,
@@ -388,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA99E141FD55E41002C168C /* Podfile in Resources */,
 				CC1277971FC2A50C004C6567 /* LaunchScreen.storyboard in Resources */,
 				CC936A241FCF50A80010055B /* GoogleService-Info.plist in Resources */,
 				CC936A2B1FD387D30010055B /* NewsTitleCell.xib in Resources */,
