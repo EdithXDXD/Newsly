@@ -7,9 +7,14 @@
 //
 
 #import "NewsContentWeb.h"
+@import Firebase;
+@import FirebaseDatabase;
+@import FirebaseStorage;
 
 @interface NewsContentWeb ()
 @property (weak, nonatomic) IBOutlet UIWebView *newsDisplay;
+@property (strong, nonatomic) FIRDatabaseReference *ref;
+
 
 @end
 
@@ -23,8 +28,18 @@
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     [self.newsDisplay setScalesPageToFit:YES];
     [_newsDisplay loadRequest:urlRequest];
-   
     
+    //initialize firebase
+    self.ref = [[FIRDatabase database] reference];
+    NSString *userID = [FIRAuth auth].currentUser.uid;
+    [[[_ref child:@"users"] child:userID] setValue:@{@"NewsList":_newsUrl}];
+//    [[[_ref child:@"users"] child:userID] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+//        // Get user value
+//        NSLog(@"local error: %@", snapshot.description);
+//        // ...
+//    } withCancelBlock:^(NSError * _Nonnull error) {
+//       // NSLog(@"local error: %@", error.localizedDescription);
+//    }];
 }
 
 - (void)didReceiveMemoryWarning {

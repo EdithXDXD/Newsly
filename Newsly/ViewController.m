@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "NewsTitlePage.h"
 @import Firebase;
 
 @interface ViewController ()
@@ -19,6 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    FBSDKLoginManager * faceBookLoginManager = [[FBSDKLoginManager alloc] init];
+    faceBookLoginManager.loginBehavior = FBSDKLoginBehaviorWeb;
+    [faceBookLoginManager logOut];
+    
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     loginButton.center = self.view.center;
     [self.view addSubview:loginButton];
@@ -38,10 +43,14 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
               error:(NSError *)error {
     if (error == nil) {
         // ...
+        [self performSegueWithIdentifier:@"directToMain" sender:nil];
+        
     } else {
-        NSLog(error.localizedDescription);
+       
     }
     
+    
+    // add user info to firebase authentication
     FIRAuthCredential *credential = [FIRFacebookAuthProvider
                                      credentialWithAccessToken:[FBSDKAccessToken currentAccessToken].tokenString];
     [[FIRAuth auth] signInWithCredential:credential
@@ -53,6 +62,31 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                                   // User successfully signed in. Get user data from the FIRUser object
                                   // ...
                               }];
+}
+
+- (void) loginButtonDidLogOut:(FBSDKLoginButton *)loginButton{
+    NSHTTPCookie *cookie;
+    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    for (cookie in [storage cookies])
+    {
+        NSString* domainName = [cookie domain];
+        NSRange domainRange = [domainName rangeOfString:@"facebook"];
+        if(domainRange.length > 0)
+        {
+            [storage deleteCookie:cookie];
+        }
+    }
+}
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //direct to main page
+    if ([segue.identifier isEqualToString:@"directToMain"]){
+        UITabBarController * tabController = (UITabBarController *)segue.destinationViewController;
+        UINavigationController *navController = (UINavigationController *)tabController.viewControllers[0];
+        NewsTitlePage *controller = (NewsTitlePage *)navController.topViewController;
+        controller = [segue destinationViewController];
+    }
 }
 
 @end
