@@ -8,7 +8,7 @@
 
 #import "SearchNewsPage.h"
 
-@interface SearchNewsPage ()<UITextFieldDelegate>
+@interface SearchNewsPage ()<UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
 //UI Elements
 
 @property (weak, nonatomic) IBOutlet UITextField *keywordTF;

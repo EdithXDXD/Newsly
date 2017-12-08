@@ -15,7 +15,7 @@
 @import FirebaseStorage;
 
 
-@interface NewsContentWeb ()
+@interface NewsContentWeb ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *newsDisplay;
 @property (strong, nonatomic) FIRDatabaseReference *ref;
 @property (strong, nonatomic) NSString *userID;

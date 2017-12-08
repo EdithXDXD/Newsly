@@ -102,6 +102,7 @@
     }];
     
     if (self.initialized){
+        [self.favoritedNews removeAllObjects];
         [[[[_ref child:@"users"] child:self.userID] child:@"NewsLists"] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
             // Get user value
             NSArray* titleTemp = snapshot.value[@"newsTitles"];

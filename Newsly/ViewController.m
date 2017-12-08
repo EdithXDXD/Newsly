@@ -12,7 +12,7 @@
 #import "NewsTitlePage.h"
 @import Firebase;
 
-@interface ViewController ()
+@interface ViewController ()<FBSDKLoginButtonDelegate>
 
 @end
 

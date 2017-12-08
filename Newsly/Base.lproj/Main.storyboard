@@ -301,9 +301,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="046" width="1400" height="924"/>
+        <image name="046" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yVi-Ya-hbS"/>
+        <segue reference="8bu-y9-EKx"/>
     </inferredMetricsTieBreakers>
 </document>
