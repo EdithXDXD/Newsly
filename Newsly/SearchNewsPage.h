@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+//block definition
 typedef void(^SearchNewsByCondition)(NSString *keyword, NSString *sortedBy, NSString* sources);
 
 @interface SearchNewsPage : UIViewController

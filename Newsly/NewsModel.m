@@ -93,6 +93,7 @@
 }
 
 -(void) syncFIRFavList{
+    //make sure won't crash when first initialized
     [[[_ref child:@"users"] child:self.userID]observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         self.initialized = YES;
         
