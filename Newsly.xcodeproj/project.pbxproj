@@ -21,6 +21,7 @@
 		CC1277C31FCA2196004C6567 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C11FCA2196004C6567 /* FBSDKLoginKit.framework */; };
 		CC1277C71FCA276C004C6567 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C51FCA276C004C6567 /* Bolts.framework */; };
 		CC1277C81FCA276C004C6567 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1277C61FCA276C004C6567 /* FBSDKShareKit.framework */; };
+		CC7C46A51FDA8E8800F2BD21 /* FavoriteNewsList.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7C46A41FDA8E8800F2BD21 /* FavoriteNewsList.m */; };
 		CC936A241FCF50A80010055B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC936A231FCF50A80010055B /* GoogleService-Info.plist */; };
 		CC936A2A1FD387D30010055B /* NewsTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC936A281FD387D30010055B /* NewsTitleCell.m */; };
 		CC936A2B1FD387D30010055B /* NewsTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC936A291FD387D30010055B /* NewsTitleCell.xib */; };
@@ -77,6 +78,8 @@
 		CC1277C11FCA2196004C6567 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CC1277C51FCA276C004C6567 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		CC1277C61FCA276C004C6567 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		CC7C46A31FDA8E8800F2BD21 /* FavoriteNewsList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteNewsList.h; sourceTree = "<group>"; };
+		CC7C46A41FDA8E8800F2BD21 /* FavoriteNewsList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteNewsList.m; sourceTree = "<group>"; };
 		CC936A231FCF50A80010055B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC936A271FD387D30010055B /* NewsTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTitleCell.h; sourceTree = "<group>"; };
 		CC936A281FD387D30010055B /* NewsTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTitleCell.m; sourceTree = "<group>"; };
@@ -250,6 +253,8 @@
 				CC936A3B1FD3B5F10010055B /* NewsContentWeb.m */,
 				CCA99E0D1FD53272002C168C /* SearchNewsPage.h */,
 				CCA99E0E1FD53272002C168C /* SearchNewsPage.m */,
+				CC7C46A31FDA8E8800F2BD21 /* FavoriteNewsList.h */,
+				CC7C46A41FDA8E8800F2BD21 /* FavoriteNewsList.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -568,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7C46A51FDA8E8800F2BD21 /* FavoriteNewsList.m in Sources */,
 				CCA99E121FD558DA002C168C /* ViewController.m in Sources */,
 				CC936A3C1FD3B5F10010055B /* NewsContentWeb.m in Sources */,
 				CC936A361FD38FC70010055B /* News.m in Sources */,

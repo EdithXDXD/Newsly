@@ -15,13 +15,21 @@
 
 // Creating the model
 + (instancetype) sharedModel;
+
 //Accessing the news information
 - (void) requestHeadlines;
 - (void) addFavorite: (News*) news;
+- (void) removeFavorite: (News *) news;
+- (BOOL) duplicated: (News *) news;
+
+//sync firebase
+
+- (void) syncFIRFavList;
 
 //searches
 - (void) searchNewsByKeyword:(NSString*) keyword;
 - (void) searchNewsByKeywordAndSource:(NSString*) keyword :(NSString *)source;
 - (void) searchNewsByKeywordAndSource:(NSString*) keyword :(NSString *)source sortBy:(NSString*) sortedBy;
 - (void) searchNewsByKeywordAndSource:(NSString*) keyword sortBy:(NSString*) sortedBy;
+
 @end

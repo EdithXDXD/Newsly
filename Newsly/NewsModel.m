@@ -8,8 +8,16 @@
 
 #import "NewsModel.h"
 #import "News.h"
+@import Firebase;
+@import FirebaseDatabase;
+@import FirebaseStorage;
+
 @interface NewsModel()
 @property NSString* googleNewsAPIKey;
+@property (strong, nonatomic) FIRDatabaseReference *ref;
+@property (strong, nonatomic) NSString *userID;
+@property BOOL initialized;
+
 @end
 
 @implementation NewsModel
@@ -31,14 +39,88 @@
     if (self){
         _headlines = [[NSMutableArray alloc] init];
         _favoritedNews = [[NSMutableArray alloc] init];
+        //initialize firebase
+        self.ref = [[FIRDatabase database] reference];
+        self.userID = [FIRAuth auth].currentUser.uid;
     }
     return self;
 }
+
 -(void) addFavorite: (News*) news{
-    [self.favoritedNews addObject:news
-     ];
+    [self.favoritedNews addObject:news];
+    
+    // update remote Firebaseß
+    NSMutableArray * newsTitles = [[NSMutableArray alloc] init];
+    NSMutableArray * newsUrls = [[NSMutableArray alloc] init];
+    
+    for (News* n in self.favoritedNews){
+        [newsTitles addObject: n.title];
+        [newsUrls addObject:n.contentURL];
+    }
+    
+    [[[[_ref child:@"users"] child:self.userID]child:@"NewsLists"] setValue:@{@"newsTitles":(NSArray*)newsTitles,@"newsUrls":(NSArray*)newsUrls}];
+}
+
+- (void) removeFavorite: (News *) news{
+    for (int i =0;i < [self.favoritedNews count]; ++i){
+        News* currNew = self.favoritedNews[i];
+        if ([currNew.contentURL isEqualToString:news.contentURL]){
+            [self.favoritedNews removeObjectAtIndex:i];
+            break;
+        }
+    }
+   
+    // update remote Firebaseß
+    NSMutableArray * newsTitles = [[NSMutableArray alloc] init];
+    NSMutableArray * newsUrls = [[NSMutableArray alloc] init];
+    
+    for (News* n in self.favoritedNews){
+        [newsTitles addObject: n.title];
+        [newsUrls addObject:n.contentURL];
+    }
+    
+     [[[[_ref child:@"users"] child:self.userID]child:@"NewsLists"] setValue:@{@"newsTitles":(NSArray*)newsTitles,@"newsUrls":(NSArray*)newsUrls}];
     
 }
+
+- (BOOL) duplicated:(News *)news{
+    for (News* n in self.favoritedNews){
+        if ([n.contentURL isEqualToString:news.contentURL]){
+            return YES;
+        }
+    }
+    return FALSE;
+}
+
+-(void) syncFIRFavList{
+    [[[_ref child:@"users"] child:self.userID]observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        self.initialized = YES;
+        
+    } withCancelBlock:^(NSError * _Nonnull error) {
+        self.initialized = NO;
+    }];
+    
+    if (self.initialized){
+        [[[[_ref child:@"users"] child:self.userID] child:@"NewsLists"] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+            // Get user value
+            NSArray* titleTemp = snapshot.value[@"newsTitles"];
+            NSArray* urlTemp = snapshot.value[@"newsUrls"];
+            for (int i =0; i < titleTemp.count; ++i){
+                News * newsTemp = [[News alloc] init];
+                newsTemp.title = titleTemp[i];
+                newsTemp.contentURL = urlTemp[i];
+                [self addFavorite:newsTemp];
+            }
+            
+            
+            // ...
+        } withCancelBlock:^(NSError * _Nonnull error) {
+            NSLog(@"%@", error.localizedDescription);
+        }];
+    }
+    
+}
+
 -(void) requestHeadlines{
     
     // clear headlines

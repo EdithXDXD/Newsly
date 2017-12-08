@@ -16,6 +16,7 @@
 @interface NewsTitlePage ()
 @property (strong, nonatomic) NewsModel *dataModel;
 @property (strong, nonatomic) NSString* selectedNewsUrl; //for content page
+@property (strong, nonatomic) News* newsSelected;
 
 @end
 
@@ -25,6 +26,7 @@
     [super viewDidLoad];
     self.dataModel = [NewsModel sharedModel];
     [self.dataModel requestHeadlines];
+    [self.dataModel syncFIRFavList];
     UINib *nib = [UINib nibWithNibName:NewsTitleID bundle:nil];
     [[self tableView] registerNib:nib forCellReuseIdentifier:NewsTitleID];
     [self tableView].rowHeight = 250.0f;
@@ -45,7 +47,6 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
@@ -94,6 +95,7 @@
     News* currNews = self.dataModel.headlines[indexPath.row];
     
     self.selectedNewsUrl = [currNews contentURL];
+    self.newsSelected = currNews;
    // redirect to next page
     
     [self performSegueWithIdentifier:@"webDisplay" sender:nil];
@@ -153,6 +155,7 @@
     if ([segue.identifier isEqualToString:@"webDisplay"]){
         NewsContentWeb * contentPage = [segue destinationViewController];
         contentPage.newsUrl = self.selectedNewsUrl;
+        contentPage.mNews = self.newsSelected;
 
     }
     else if ([segue.identifier isEqualToString:@"searchNewsSegue"]){
