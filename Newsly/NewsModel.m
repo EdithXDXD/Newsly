@@ -47,6 +47,7 @@
 }
 
 -(void) addFavorite: (News*) news{
+    //update local
     [self.favoritedNews addObject:news];
     
     // update remote Firebaseß
@@ -62,6 +63,7 @@
 }
 
 - (void) removeFavorite: (News *) news{
+    //update local
     for (int i =0;i < [self.favoritedNews count]; ++i){
         News* currNew = self.favoritedNews[i];
         if ([currNew.contentURL isEqualToString:news.contentURL]){
@@ -83,6 +85,7 @@
     
 }
 
+/*Check whether current news stored is duplicated*/
 - (BOOL) duplicated:(News *)news{
     for (News* n in self.favoritedNews){
         if ([n.contentURL isEqualToString:news.contentURL]){
@@ -92,6 +95,7 @@
     return FALSE;
 }
 
+/*Sync Firebase fav list*/
 -(void) syncFIRFavList{
     //make sure won't crash when first initialized
     [[[_ref child:@"users"] child:self.userID]observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
@@ -113,9 +117,7 @@
                 newsTemp.contentURL = urlTemp[i];
                 [self addFavorite:newsTemp];
             }
-            
-            
-            // ...
+
         } withCancelBlock:^(NSError * _Nonnull error) {
             NSLog(@"%@", error.localizedDescription);
         }];
@@ -123,6 +125,7 @@
     
 }
 
+//default news list
 -(void) requestHeadlines{
     
     // clear headlines
@@ -148,6 +151,7 @@
     }
     
 }
+
 
 -(void) searchNewsByKeyword:(NSString*) keyword{
     // clear headlines
